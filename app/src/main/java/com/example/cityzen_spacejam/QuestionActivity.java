@@ -1,19 +1,20 @@
-package com.example.forum;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.cityzen_spacejam;
 
 import android.content.Intent;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
-import java.util.Random;
+
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+
+import java.util.Random;
 
 public class QuestionActivity extends AppCompatActivity {
     String category="Other";
@@ -25,7 +26,7 @@ public class QuestionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_main2);
         askButton=findViewById(R.id.payNow);
         questiontext=findViewById(R.id.editTextTextMultiLine3);
         this.getSupportActionBar().hide();
@@ -48,7 +49,7 @@ public class QuestionActivity extends AppCompatActivity {
                 storeData(questionAsked,categorySelected);
 
                 //Show Message
-                Toast.makeText(QuestionActivity.this, "Question successfully submitted", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "Question successfully submitted", Toast.LENGTH_SHORT).show();
 
                 //Redirect to forum
                 Intent intent=new Intent(getApplicationContext(),ForumActivity.class);

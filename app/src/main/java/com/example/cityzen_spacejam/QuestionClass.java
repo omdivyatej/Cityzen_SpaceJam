@@ -1,4 +1,4 @@
-package com.example.forum;
+package com.example.cityzen_spacejam;
 
 public class QuestionClass {
     String question;

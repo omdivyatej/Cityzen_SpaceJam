@@ -9,13 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Cityzen_SpaceJam">
-        <activity android:name=".ForumActivity"></activity>
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name=".ForumActivity" />
         <activity android:name=".BookRestaurant" />
         <activity android:name=".localrefresh" />
         <activity android:name=".Hospitals" />
         <activity android:name=".placestovisit" />
         <activity android:name=".top10" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".QuestionActivity" />
+        <activity android:name=".AddAnswer"/>
+        <activity android:name=".ForumAnswer"/>
+        <activity android:name=".LoginPage">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

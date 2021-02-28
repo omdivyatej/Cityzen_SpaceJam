@@ -4,6 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".placestovisit">
+    tools:context=".placestovisit"
+    android:background="@drawable/gradient">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="#FFE400"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="302dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:drawableStart="?attr/actionModeCloseDrawable"
+            android:drawableLeft="?attr/actionModeCloseDrawable"
+            android:gravity="center|start"
+            android:text="Visit"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layoutDirection="rtl"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <ListView
+        android:padding="10dp"
+        android:id="@+id/questionList"
+        android:layout_width="409dp"
+        android:layout_height="568dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
