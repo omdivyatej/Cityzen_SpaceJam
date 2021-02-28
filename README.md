@@ -1,7 +1,9 @@
 # Cityzen_SpaceJam
 Team: Cookies
+#This app is specifically and strictly designed keeping the model Pixel 3A (emulator) in mind. Using the app on different screen size will distort the design. So please use pixel 3a model only.
 
-Used:
+Run the code in emulator  PIXEL_3A_API_x86 only.
+#Used:
 Android Studio 4.0
 Firebase
 Java
